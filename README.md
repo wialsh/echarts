@@ -1,6 +1,6 @@
 *echarts*
 
-echarts地图可视化模板
+echarts地图可视化模板-基于python
 ---
 
 
