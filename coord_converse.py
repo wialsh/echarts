@@ -4,10 +4,8 @@ Created on Wed Jan 23 10:40:05 2019
 
 @author: wialsh
 """
-import psycopg2
-import numpy as np
 
-import config as cfg
+import numpy as np
 
 
 ## https://blog.csdn.net/yzyssg1/article/details/76120617/
@@ -115,6 +113,8 @@ def transformlng(lng, lat):
 def out_of_china(lng, lat):
     res = False
     try:
+        import psycopg2
+        import config as cfg
         if not isinstance(lng, float):
             lng, lat = lng[0], lat[0]
 
