@@ -85,4 +85,8 @@ if __name__ == '__main__':
     visualize(coordinate)
 ```
 
+- [地图可视化](https://echarts.baidu.com/)
+- [echarts可视化大全](https://www.echartsjs.com/examples/#chart-type-line)
+- [echarts可视化栗子1](https://echarts.baidu.com/examples/editor.html?c=map-polygon)
+- [echarts文档](https://echarts.baidu.com/option.html#series-map.markPoint)
 
