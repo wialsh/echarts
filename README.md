@@ -28,8 +28,8 @@ def visualize(coordinate):
     lats, lngs = np.array(zip(*coordinate))
 
     #WGS84 converse to BD09(intermediate: GCJ02)
-    lngs, lats = wgs84togcj02(lngs, lats)
-    lngs, lats = gcj02tobd09(lngs, lats)
+    # lngs, lats = wgs84togcj02(lngs, lats)
+    # lngs, lats = gcj02tobd09(lngs, lats)
 
     coordinate = np.vstack((lngs,lats)).T
 
