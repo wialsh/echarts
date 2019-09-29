@@ -11,31 +11,32 @@ left  = '_left'
 right = '_right'
 
 #see echarts-test.html, visualize: double-click echarts-test.html file.
-ECHARTS = u"""
-
+ECHARTS = """
 <html>
-  <head>
-                <meta charset='utf-8'>
-                <style type='text/css'>
+ <head> 
+  <meta charset="utf-8" /> 
+  <style type="text/css">
                 body _left
                 margin: 0;
                 _right
                 #main _left
                 height: 100%;
                 _right
-                </style>
-                </head>
-                <body>
-                <div id='main'></div>
-                <script src='http://echarts.baidu.com/build/dist/echarts.js'></script>
-                <script type='text/javascript' src='http://api.map.baidu.com/api?v=2.0&ak=q9U1lWgCK1aBGVC1DVWrgWa7'></script>
-                <script src='http://echarts.baidu.com/doc/asset/js/jquery.min.js'></script>
-                <script>
+                </style> 
+ </head> 
+ <body> 
+  <div id="main"></div> 
+  <script src="https://cdn.bootcss.com/require.js/2.3.6/require.min.js"></script> 
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="http://echarts.baidu.com/build/dist/echarts.js"></script> 
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=q9U1lWgCK1aBGVC1DVWrgWa7"></script> 
+  <script>
 
                 (function () _left
                 require.config(_left
                 paths: _left
-                echarts:'http://echarts.baidu.com/doc/example/www/js'
+                    //echarts:'http://echarts.baidu.com/doc/example/www/js'
+                    echarts: 'http://echarts.baidu.com/build/dist',
                 _right,
                 packages: [
                 _left
@@ -228,7 +229,7 @@ ECHARTS = u"""
   _right);
 
 
-option = _left
+var option = _left
   color: ['gold','aqua','lime'],
   title : _left
     text: '',
@@ -265,7 +266,7 @@ option = _left
       type:'map',
       mapType: 'none',
       data:[]
-  
+
       ,markPoint : _left
         symbol:'emptyCircle',
       symbolSize :2.5,
@@ -299,9 +300,7 @@ BMapExt.setOption(option);
                 _right
                 );
                 _right)();
-</script>
-  </body>
-  </html>
-
-
+    </script>   
+ </body>
+</html>
 """
